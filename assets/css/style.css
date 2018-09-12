@@ -1,0 +1,57 @@
+
+body {
+   background-image: url("../images/chem-background.jpg"); 
+   background-size: 500px;
+   font-family: 'Share Tech Mono', monospace;
+}
+
+#header {
+    background-color: #1e3a3e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#game-body {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.chemicals {
+    height: 150px;
+}
+
+.beaker {
+    height: 300px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+.beakerNum {
+    background-color:  black;
+    position: absolute;
+    top: 190px; 
+    left: 230px;
+    width: 100px;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+
+}
+
+.stats {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#winslosses {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Sigmar One', cursive;
+}
