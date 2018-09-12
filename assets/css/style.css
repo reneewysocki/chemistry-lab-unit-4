@@ -10,7 +10,6 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 10px;
 }
 
 #game-body {
@@ -54,4 +53,8 @@ body {
 
 h1 {
     font-family: 'Sigmar One', cursive;
+    font-size: 50px;
+    color: #E75A7C;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
