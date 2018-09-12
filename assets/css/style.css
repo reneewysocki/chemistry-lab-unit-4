@@ -2,11 +2,11 @@
 body {
    background-image: url("../images/chem-background.jpg"); 
    background-size: 500px;
-   font-family: 'Share Tech Mono', monospace;
+   font-family: 'Montserrat', sans-serif;
 }
 
 #header {
-    background-color: #1e3a3e;
+    background-color: #1E3A3E;
     color: white;
     text-align: center;
     padding: 20px;
@@ -41,6 +41,30 @@ body {
 
 }
 
+@media only screen and (max-width: 991px) {
+    .beakerNum {
+        position: absolute;
+        top: 190px; 
+        left: 140px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .beakerNum {
+        position: absolute;
+        top: 190px; 
+        left: 210px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .beakerNum {
+        position: absolute;
+        top: 190px; 
+        left: 100px;
+    }
+}
+
 .stats {
     margin-top: 10px;
     font-size: 20px;
@@ -52,9 +76,40 @@ body {
 }
 
 h1 {
-    font-family: 'Sigmar One', cursive;
-    font-size: 50px;
-    color: #E75A7C;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    color: #E7801C;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+    letter-spacing: 5px;
+    animation: colorchange 100s infinite;
 }
+
+@keyframes colorchange {
+    4%  {color: #E7801C;}
+    8%  {color: #E3B219;}
+    12%  {color: #CBCF17;}
+    16% {color: #A2DB14;}
+    20% {color: #6AD611;}
+    24% {color: #33D20E;}
+    28% {color: #0CCE1b;}
+    32% {color: #09CA4B;}
+    36% {color: #07C57B;}
+    40% {color: #05C1A9;}
+    44% {color: #03A3BD;}
+    48% {color: #006fb9;}
+    52% {color: #006fb9;}
+    56% {color: #03A3BD}
+    60% {color: #05C1A9;}
+    64% {color: #07C57B;}
+    68% {color: #09CA4B;}
+    72% {color: #0CCE1b;}
+    76% {color: #33D20E;}
+    80% {color: #6AD611;}
+    84% {color: #A2DB14;}
+    88% {color: #CBCF17;}
+    92% {color: #E3B219;}
+    96% {color: #E7801C;}
+    98% {color: #EC4D1F;}
+    100% {color: #EC4D1F;}
+ }

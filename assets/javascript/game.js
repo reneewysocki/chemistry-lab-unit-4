@@ -53,30 +53,31 @@ $(document).ready(() => {
     if (userNum === goalNum) {
         alert("You made a successful experiment!");
         winCount ++; 
-        reset();
+        assign();
         $('#wins').html(winCount);
         
     }
     else if (userNum > goalNum) {
         var difference = goalNum - userNum;
-        alert("You lose!" + difference);
+        alert("You lose! " + difference);
         loseCount ++;
-        reset();
+        assign();
         $('#losses').html(loseCount);
     }
    } 
 
-   function reset () {
-    goalNum = Math.floor(Math.random() * 102) + 19;
-    userNum = 0;
-    redNum = numbers[Math.floor(Math.random() * numbers.length)]; 
-    yellowNum = numbers[Math.floor(Math.random() * numbers.length)]; 
-    greenNum = numbers[Math.floor(Math.random() * numbers.length)];
-    blueNum = numbers[Math.floor(Math.random() * numbers.length)];
-    $('#goalNum').html(goalNum);
-   } 
+   //function reset () {
+  //  redNum = numbers[Math.floor(Math.random() * numbers.length)]; 
+   // yellowNum = numbers[Math.floor(Math.random() * numbers.length)]; 
+   // greenNum = numbers[Math.floor(Math.random() * numbers.length)];
+   // blueNum = numbers[Math.floor(Math.random() * numbers.length)];
+   // $('#goalNum').html(goalNum);
+  // } 
 
    function assign () {
+        goalNum = Math.floor(Math.random() * 102) + 19;
+        userNum = 0;
+        $('#goalNum').html(goalNum);
        var ri = Math.floor(Math.random() * numbers.length);
        redNum = numbers[ri];
        numbers.splice([ri],1);
@@ -94,7 +95,7 @@ $(document).ready(() => {
        console.log("yellow:" + yellowNum);
        console.log("green:" + greenNum);
        console.log("blue:" + blueNum);
-       console.log(numbers);
+       console.log("goal:" + goalNum);
    }
 
 });
