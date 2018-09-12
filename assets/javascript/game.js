@@ -7,6 +7,7 @@
     var greenNum;
     var blueNum;
     var loseCount = 0;
+    var winCount = 0;
 
 $(document).ready(() => {
 
@@ -41,7 +42,6 @@ $(document).ready(() => {
     });
 
 
-    //writes the goal number to the page 
     $('#goalNum').html(goalNum);
     $('#userNum').html(userNum);
     $('#wins').html(winCount);
